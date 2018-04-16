@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>On noticing things while you read</title>
+	
+	<meta name="description" content="">
+	<meta name="image" content="">
+	
+	<meta itemprop="name" content="On noticing things while you read">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="">
+	
+	<meta name="og:title" content="On noticing things while you read">
+	<meta name="og:description" content="">
+	
+	<meta name="og:url" content="https://temporaryobsessions.github.io/posts/2018/04/on-noticing-things/">
+	<meta name="og:site_name" content="On noticing things while you read">
+	<meta name="og:type" content="article">
+	
+	<meta name="article:tag" content="">
+	<link rel="stylesheet" type="text/css" href="https://temporaryobsessions.github.io/css/style.css">
+	
+	
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body>
+
+<header>
+	
+	<a href="https://temporaryobsessions.github.io/" style="float: left;color:#777;"><strong>Temporary Obsessions</strong></a>
+	
+	
+	
+	
+	
+	<a href="https://temporaryobsessions.github.io/index.xml" style="color:#777;float: right;"><strong><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></strong></a>
+</header>
+
+
+<div id="loadingMask" style="width: 100%; height: 100%; position: fixed; background: #fff;"></div>
+<script>
+function fadeOut(el) {
+  el.style.opacity = 1;
+
+  var last = +new Date();
+  var tick = function() {
+    el.style.opacity = +el.style.opacity - (new Date() - last) / 80;
+    last = +new Date();
+    
+
+    if (el.style.opacity > 0) {
+      (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
+    } else {
+      el.style.display='none';
+    }
+  };
+
+  tick();
+}
+
+function ready(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+         el = document.getElementById('loadingMask');
+         fadeOut(el);
+        var elements = document.querySelectorAll("img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("alt")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("alt"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+
+    } else {
+        document.addEventListener('DOMContentLoaded', fn);
+    }
+}
+window.onload = ready;
+</script>
+
+<div class="content">
+  <h1>On noticing things while you read <aside></aside></h1>
+  <p>Included with the Coursera course "Learning How to Learn"<sup class="footnote-ref" id="fnref:Take-it-It-s-free"><a href="#fn:Take-it-It-s-free">1</a></sup> is a video interview between the instructor, Prof. Barbara Oakley, and William Craig Rice, who was then Director of the Division of Education Programs at the National Endowment for the Humanities<sup class="footnote-ref" id="fnref:Rice-passed-away-in-2016"><a href="#fn:Rice-passed-away-in-2016">2</a></sup> One thing that struck me in his interview was his approach to reading:</p>
+
+<blockquote>
+<p>
+I don't know that I'm any better at this than another reader would be, because what I start with is just noticing. I was taught this a long time ago that you don't need to be ready to analyze or make an argument or otherwise elaborate. Just read and when you notice something, mark it. Just noticing is a neutral act, it's giving your own mind credit for being alive. That's really important and I mark with a little vertical sign on the margin...you may notice that you're noticing the same thing over and over again. In which case, I call it a pattern—not an original idea—but you look for patterns.
+</p>
+</blockquote>
+
+<p>In the interview, the suggestion is clearly aimed at students. It is very good advice for figuring out a paper to write about what you are reading. Beyond that, it is an essential idea for learning and creativity, something that all of us to can put to good use.</p>
+
+<p>In doing an assignment, it is much less stressful to approach a given reading in this way. The first reading is for initial understanding and noticing, not for coming up with a brilliant idea for that paper imminently due. Don't worry about whether or not you are noticing "the most important things", or "the killer insight", or things that just seem dumb. In the moment, it is just you and what your mind is pointing to. What you notice is likely not what everyone else notices, and the points you mark will later help add color and detail in writing your response to the reading.</p>
+
+<p>Marking what you notice is also a terrific way to connect what you are reading with what you already know, helping you to remember what the reading is about. What you notice are the "hooks" in your memory than you can hang the new ideas on. Using these hooks makes it easy to remember essential points about what you have read, because they are meaningful to you. Taking advantage of those meanings is much more effective for memory than simply trying to outline and memorize the key points of a text.</p>
+
+<p>Noticing is also a part of creativity, coming from the collision of ideas. Your unique history, knowledge, and experience primes you to notice things that others won't, just as they will notice thing you don't. Being more attentive to the things you notice, even if they seem silly at first, can spark creative ideas in many different directions.</p>
+
+<p>What are you supposed to notice? Really, it's whatever you <em>do</em> notice. It might be an unfamiliar word, a word used in an unusual way, a striking metaphor, a gap in the explanation. You don't need to chase them all down; just mark them and continue. Afterwards, you see what patterns you noticed, or ponder the details, or chase down the questions raised.</p>
+
+<p>Part of what struck me about Rice's comment was simply that I hadn't heard it put that way before, and I wish I had. He mentions in the video that he was told it long ago. As a student, I would have found it immensely valuable. Most of the advice I had heard about reading was akin to that of Mortimer Adler and Chales Van Doren in <em>How to Read a Book</em>, which presents a very top-down method of approaching a text. Noticing, on the other hand, is a bottom-up method, letting the creative parts of your brain help with understanding and insight as well. David Mikics, in <em>Slow Reading in a Hurried Age</em> (which I highly recommend), develops a set of rules for reading literature, and Rule 5 is "Notice beginnings and endings." This advice is a bit different, meaning that we should pay particular attention to them, but is in the same spirit. And the idea of noticing details permeates the book. Or, perhaps, I encountered the idea, but just hadn't noticed it before.</p>
+
+<p>Oddly enough, the words "notice" and "note", which seem so closely related in English, come from different roots in Latin. "notice" is from the Latin <em>nōscere</em>, meaning "to become acquainted with", which came from the Greek <em>gnōsis</em>, meaning knowledge<sup class="footnote-ref" id="fnref:I-took-some-small-liberties-with-the-details-of-the-word-forms-in-the-etymology-but-the-basic-arc-is-correct"><a href="#fn:I-took-some-small-liberties-with-the-details-of-the-word-forms-in-the-etymology-but-the-basic-arc-is-correct">3</a></sup>, and it came into Middle English via Middle French. The word "note", on the other hand, comes from the Latin word <em>nota</em>, meaning a note or mark, which also explains why we have "musical notes" (that is, marks for music), which don't otherwise seem to have much to do with the kind of notes we take while reading or in a lecture.</p>
+
+<blockquote>
+<p>
+<em>Start by noticing.</em>
+</p>
+</blockquote>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:Take-it-It-s-free">DEFINITION NOT FOUND <a class="footnote-return" href="#fnref:Take-it-It-s-free"><sup>[return]</sup></a></li>
+
+<li id="fn:Rice-passed-away-in-2016">DEFINITION NOT FOUND <a class="footnote-return" href="#fnref:Rice-passed-away-in-2016"><sup>[return]</sup></a></li>
+
+<li id="fn:I-took-some-small-liberties-with-the-details-of-the-word-forms-in-the-etymology-but-the-basic-arc-is-correct">DEFINITION NOT FOUND <a class="footnote-return" href="#fnref:I-took-some-small-liberties-with-the-details-of-the-word-forms-in-the-etymology-but-the-basic-arc-is-correct"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+</div>
+
+
+
+
+<footer>
+	<p>© 2017-2018, all rights reserved.</a>
+</footer>
+</body>
+</html>

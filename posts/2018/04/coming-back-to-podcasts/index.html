@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Coming back to podcasts</title>
+	
+	<meta name="description" content="">
+	<meta name="image" content="">
+	
+	<meta itemprop="name" content="Coming back to podcasts">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="">
+	
+	<meta name="og:title" content="Coming back to podcasts">
+	<meta name="og:description" content="">
+	
+	<meta name="og:url" content="https://temporaryobsessions.github.io/posts/2018/04/coming-back-to-podcasts/">
+	<meta name="og:site_name" content="Coming back to podcasts">
+	<meta name="og:type" content="article">
+	
+	<meta name="article:tag" content="">
+	<link rel="stylesheet" type="text/css" href="https://temporaryobsessions.github.io/css/style.css">
+	
+	
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body>
+
+<header>
+	
+	<a href="https://temporaryobsessions.github.io/" style="float: left;color:#777;"><strong>Temporary Obsessions</strong></a>
+	
+	
+	
+	
+	
+	<a href="https://temporaryobsessions.github.io/index.xml" style="color:#777;float: right;"><strong><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></strong></a>
+</header>
+
+
+<div id="loadingMask" style="width: 100%; height: 100%; position: fixed; background: #fff;"></div>
+<script>
+function fadeOut(el) {
+  el.style.opacity = 1;
+
+  var last = +new Date();
+  var tick = function() {
+    el.style.opacity = +el.style.opacity - (new Date() - last) / 80;
+    last = +new Date();
+    
+
+    if (el.style.opacity > 0) {
+      (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
+    } else {
+      el.style.display='none';
+    }
+  };
+
+  tick();
+}
+
+function ready(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+         el = document.getElementById('loadingMask');
+         fadeOut(el);
+        var elements = document.querySelectorAll("img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("alt")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("alt"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+
+    } else {
+        document.addEventListener('DOMContentLoaded', fn);
+    }
+}
+window.onload = ready;
+</script>
+
+<div class="content">
+  <h1>Coming back to podcasts <aside></aside></h1>
+  <p>Yesterday I wrote about <a href="https://temporaryobsessions.github.io/posts/giving-up-podcasts/" title="giving up podcasts">giving up podcasts</a>. For a long time, I liked the feeling of a less-cluttered mind, which seemed to be correlated with taking that step. But I still missed them. Partly it was from the random incompletions of listening to the radio in the car. Mostly it was missing some of my favorite voices, bringing some perspectives that I don't otherwise get to hear.</p>
+
+<p>A couple of weeks ago, I started bringing some back, slowly. Adding one at a time, catching up on the last three episodes, just to see if I still wanted to hear that voice. My current rule is to add only as many as I can get through in a week. I don't want to re-create the backlog, with its pressure to listen, that I had before. And I'm trying to keep a little bit of diversity of voice and topic in the collection.</p>
+
+<p>So far, it seems to be working. It's not stressful, and I'm enjoying it, without giving up chances for my mind to wander and think about my own work as well.</p>
+
+<p>The quiet time is still important, so I'm trying to leave plenty of opportunity for that.</p>
+
+<p>We'll see how it goes.</p>
+
+</div>
+
+
+
+
+<footer>
+	<p>© 2017-2018, all rights reserved.</a>
+</footer>
+</body>
+</html>

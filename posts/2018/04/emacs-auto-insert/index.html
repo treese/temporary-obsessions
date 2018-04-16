@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Emacs: Default content for a blog post</title>
+	
+	<meta name="description" content="">
+	<meta name="image" content="">
+	
+	<meta itemprop="name" content="Emacs: Default content for a blog post">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="">
+	
+	<meta name="og:title" content="Emacs: Default content for a blog post">
+	<meta name="og:description" content="">
+	
+	<meta name="og:url" content="https://temporaryobsessions.github.io/posts/2018/04/emacs-auto-insert/">
+	<meta name="og:site_name" content="Emacs: Default content for a blog post">
+	<meta name="og:type" content="article">
+	
+	<meta name="article:tag" content="">
+	<link rel="stylesheet" type="text/css" href="https://temporaryobsessions.github.io/css/style.css">
+	
+	
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body>
+
+<header>
+	
+	<a href="https://temporaryobsessions.github.io/" style="float: left;color:#777;"><strong>Temporary Obsessions</strong></a>
+	
+	
+	
+	
+	
+	<a href="https://temporaryobsessions.github.io/index.xml" style="color:#777;float: right;"><strong><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></strong></a>
+</header>
+
+
+<div id="loadingMask" style="width: 100%; height: 100%; position: fixed; background: #fff;"></div>
+<script>
+function fadeOut(el) {
+  el.style.opacity = 1;
+
+  var last = +new Date();
+  var tick = function() {
+    el.style.opacity = +el.style.opacity - (new Date() - last) / 80;
+    last = +new Date();
+    
+
+    if (el.style.opacity > 0) {
+      (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
+    } else {
+      el.style.display='none';
+    }
+  };
+
+  tick();
+}
+
+function ready(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+         el = document.getElementById('loadingMask');
+         fadeOut(el);
+        var elements = document.querySelectorAll("img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("alt")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("alt"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+
+    } else {
+        document.addEventListener('DOMContentLoaded', fn);
+    }
+}
+window.onload = ready;
+</script>
+
+<div class="content">
+  <h1>Emacs: Default content for a blog post <aside></aside></h1>
+  <p>I wanted to configure Emacs to automatically insert a template for particular kinds of files, but only in certain directories. All of the machinery for this exists, but it doesn't quite seem to be all connected together.</p>
+
+<p>The starting point is <code>auto-insert</code>, which provides a simple template mechanism to insert text into a file when it is first created. The template language can also execute Lisp expressions, making it possible to insert dynamic data as well.</p>
+
+<p>Here's the basic setup for an org-mode template for a blog post using Hugo (which is why we have to fix up the timezone in the date string):</p>
+
+<pre><code class="language-emacs-lisp">(define-auto-insert 'org-mode
+  '(&quot;Blog post header&quot;
+    &quot;#+TITLE: &quot; - &quot;\n&quot;
+    &quot;#+DATE: &quot;
+    (format-time-string &quot;%FT%T%z&quot;)
+    ;; Fix the timezone format for Hugo
+    -2
+    &quot;:00&quot;
+    &quot;\n\n&quot;))
+</code></pre>
+
+<p>This assumes that <code>auto-insert-mode</code> is enabled, and that <code>auto-insert-query</code> is configured to ask for confirmation, since I don't want to do this in all Org files.</p>
+
+<p>I'll add the per-directory part later.</p>
+
+</div>
+
+
+
+
+<footer>
+	<p>© 2017-2018, all rights reserved.</a>
+</footer>
+</body>
+</html>

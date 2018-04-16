@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>On giving up podcasts</title>
+	
+	<meta name="description" content="">
+	<meta name="image" content="">
+	
+	<meta itemprop="name" content="On giving up podcasts">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="">
+	
+	<meta name="og:title" content="On giving up podcasts">
+	<meta name="og:description" content="">
+	
+	<meta name="og:url" content="https://temporaryobsessions.github.io/posts/2018/04/giving-up-podcasts/">
+	<meta name="og:site_name" content="On giving up podcasts">
+	<meta name="og:type" content="article">
+	
+	<meta name="article:tag" content="">
+	<link rel="stylesheet" type="text/css" href="https://temporaryobsessions.github.io/css/style.css">
+	
+	
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body>
+
+<header>
+	
+	<a href="https://temporaryobsessions.github.io/" style="float: left;color:#777;"><strong>Temporary Obsessions</strong></a>
+	
+	
+	
+	
+	
+	<a href="https://temporaryobsessions.github.io/index.xml" style="color:#777;float: right;"><strong><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></strong></a>
+</header>
+
+
+<div id="loadingMask" style="width: 100%; height: 100%; position: fixed; background: #fff;"></div>
+<script>
+function fadeOut(el) {
+  el.style.opacity = 1;
+
+  var last = +new Date();
+  var tick = function() {
+    el.style.opacity = +el.style.opacity - (new Date() - last) / 80;
+    last = +new Date();
+    
+
+    if (el.style.opacity > 0) {
+      (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
+    } else {
+      el.style.display='none';
+    }
+  };
+
+  tick();
+}
+
+function ready(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+         el = document.getElementById('loadingMask');
+         fadeOut(el);
+        var elements = document.querySelectorAll("img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("alt")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("alt"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+
+    } else {
+        document.addEventListener('DOMContentLoaded', fn);
+    }
+}
+window.onload = ready;
+</script>
+
+<div class="content">
+  <h1>On giving up podcasts <aside></aside></h1>
+  <p>Last fall, I gave up podcasts. Cold turkey.</p>
+
+<p>It was Manoush's fault. <a href="http://www.manoushz.com/" title="Manoush Zomorodi">Manoush Zomorodi</a> hosts the WYNC podcast "<a href="https://www.wnycstudios.org/shows/notetoself" title="Note to Self">Note to Self</a>", about life with modern technology. She did a series on the show did called "Bored and Brilliant" that turned into a <a href="http://www.manoushz.com/book/" title="book with the same name.">book with the same name.</a></p>
+
+<p>In the series, she posed a set of challenges to experience personal technology differently. The last one: delete the app on your phone that is always grabbing your attention. For some, it's Facebook. For others, Twitter. Or maybe Two Dots.</p>
+
+<p>For me, it was podcasts. Over several years, I had amassed a large collection of podcast subscriptions, and I listened all the time. In the car, doing dishes, on a walk, in the gym, working in the yard. If I wasn't doing requiring focused mental attention, I was listening, to an eclectic collection that ranged over a wide range of topics. All of them were interesting: stimulating ideas to ponder, things to think about, political issues to be outraged over.</p>
+
+<p>Then, last September, I was outside cleaning up the yard for fall and listening to Brooke Gladstone (of WNYC's "On the Media" show) interview Manoush after the book came out. She talked about the Bored & Brilliant challenges. And I realized that Overcast was my problem app.</p>
+
+<p>Don't get me wrong. Overcast is a great app, and podcasts are great. But it was time to take a break.</p>
+
+<p>I didn't delete it, because I didn't want to lose the subscription list if I decided to come back. But I did exile it from the home screen on my phone to avoid seeing it.</p>
+
+<p>After the interview was open, I stopped listening to podcasts. Complete stop. My plan was to try it, as Manoush had challenged, for a week. Which turned into two. And then months.</p>
+
+<p>The first couple of days I was going crazy. I had to take a 45-minute bus ride to the airport for a sudden trip. I can't read on a bus, so I usually listen to podcasts. Instead, I stared out the window. Taking a walk, I let my mind wander as I looked at the landscape. In the car, if I put on the radio (which wasn't always), I put on NPR or (gasp!) commercial radio. I felt like something was wrong.</p>
+
+<p>There's a weird effect of going back to listening to radio programs that are also available as podcasts: the radio doesn't pause when you get out of the car.<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup> That took a little getting used to.</p>
+
+<p>But then something started to happen. Over the next few days, I started to feel calmer. Maybe more focused at times--it's hard to tell. A lot more mind wandering. Too much time, it seems, with music running through my head that I can't quite seem to control. Perhaps a few extra ideas out of nowhere. Nothing earth-shattering, but occasional creative solutions to small problems. I mentally composed a note about this, which is, much later, turning into this post, on a walk.</p>
+
+<p>For the most, I had thought that the podcasts were a good way of getting exposed to new ideas and information during otherwise mindless time. The experience of stopping showed me that, perhaps, they were getting in the way of my own ideas and putting them together with others.</p>
+
+<p>It's not new to say that the mind-wandering time is essential for creativity, or for having the capacity to focus intently at other times. Quitting podcasts gave me a direct experience for the difference, and I like the way it feels.</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">Actually, a long time ago, some colleagues and I built a system that stored the previous 24 hours of our local NPR station, so you could pause the radio in your office. This was well before DVRs or podcasts, and it completely changed the radio experience, as well as startling some visitors at times. One consequence was that as you walked down our row of offices, you might hear NPR playing from different times of the day! <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+</div>
+
+
+
+
+<footer>
+	<p>© 2017-2018, all rights reserved.</a>
+</footer>
+</body>
+</html>

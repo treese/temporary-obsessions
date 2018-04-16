@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Podcast list as of 4/11/2018</title>
+	
+	<meta name="description" content="">
+	<meta name="image" content="">
+	
+	<meta itemprop="name" content="Podcast list as of 4/11/2018">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="">
+	
+	<meta name="og:title" content="Podcast list as of 4/11/2018">
+	<meta name="og:description" content="">
+	
+	<meta name="og:url" content="https://temporaryobsessions.github.io/posts/2018/04/podcast-list/">
+	<meta name="og:site_name" content="Podcast list as of 4/11/2018">
+	<meta name="og:type" content="article">
+	
+	<meta name="article:tag" content="">
+	<link rel="stylesheet" type="text/css" href="https://temporaryobsessions.github.io/css/style.css">
+	
+	
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body>
+
+<header>
+	
+	<a href="https://temporaryobsessions.github.io/" style="float: left;color:#777;"><strong>Temporary Obsessions</strong></a>
+	
+	
+	
+	
+	
+	<a href="https://temporaryobsessions.github.io/index.xml" style="color:#777;float: right;"><strong><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></strong></a>
+</header>
+
+
+<div id="loadingMask" style="width: 100%; height: 100%; position: fixed; background: #fff;"></div>
+<script>
+function fadeOut(el) {
+  el.style.opacity = 1;
+
+  var last = +new Date();
+  var tick = function() {
+    el.style.opacity = +el.style.opacity - (new Date() - last) / 80;
+    last = +new Date();
+    
+
+    if (el.style.opacity > 0) {
+      (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
+    } else {
+      el.style.display='none';
+    }
+  };
+
+  tick();
+}
+
+function ready(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+         el = document.getElementById('loadingMask');
+         fadeOut(el);
+        var elements = document.querySelectorAll("img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("alt")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("alt"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+
+    } else {
+        document.addEventListener('DOMContentLoaded', fn);
+    }
+}
+window.onload = ready;
+</script>
+
+<div class="content">
+  <h1>Podcast list as of 4/11/2018 <aside></aside></h1>
+  <p>Here's a list of the podcasts I currently have in my rotation, within the constraint of getting through them in a week. No claims about these being the "best" podcasts, just what I'm listening to now.</p>
+
+<p><a href="https://99percentinvisible.org/" title="99% Invisible">99% Invisible</a>: A podcast about design, mostly invisible, that shapes our experience of the world. Hosted by Roman Mars, who has possibly the best podcast voice in podcasting.</p>
+
+<p><a href="https://www.akimbo.me/" title="Akimbo">Akimbo</a>: From Seth Godin, who describes it as "a podcast about our culture and about how we can change it. About seeing what's happening and choosing to do something." Exactly.</p>
+
+<p><a href="https://www.theallusionist.org/" title="The Allusionist">The Allusionist</a>: A podcast about the language, from the other side of the pond. Delightful.</p>
+
+<p><a href="https://www.nytimes.com/podcasts/the-daily" title="The Daily">The Daily</a>: From the New York Times. Each weekday morning, a look behind one of the important headlines of the day, with host Michael Barbaro talking to a Times journalist who is covering that story. It brings out of the personality of the reporter and the depth of what they know about those stories and the background.</p>
+
+<p><a href="http://blog.cognitect.com/cognicast/" title="Cognicast">Cognicast</a>: A podcast from Cognitect, a software consulting company, about software and the people who make it. Technically, the show draws mostly on the Clojure software world, but many of the stories are about bigger issues in software engineering, engineering, and life.</p>
+
+<p><a href="https://www.imaginaryworldspodcast.org/" title="Imaginary Worlds">Imaginary Worlds</a>: Eric Molinsky's bi-weekly podcast about the genres of science fiction and fantasy, especially about how they impossible stories tell us so much about ourselves.</p>
+
+<p><a href="http://www.slate.com/articles/podcasts/lexicon_valley.html" title="Lexicon Valley">Lexicon Valley</a>: A Slate podcast about language, hosted by John McWhorter, a professor who teaches linguistics, philosophy, and music at Columbia. Endlessly fascinating.</p>
+
+<p><a href="https://www.wnycstudios.org/shows/notetoself" title="Note to Self">Note to Self</a>: a terrific podcast from WYNC looking at the ways we use technology now and how that affects ordinary life.</p>
+
+<p><a href="https://www.wnycstudios.org/shows/otm/" title="On The Media">On The Media</a>: Another WNYC program, looking at how the media looks at the world and tells us about it.</p>
+
+<p><a href="http://radioopensource.org/" title="Open Source with Christopher Lydon">Open Source with Christopher Lydon</a>: A podcast (and radio program) about "arts, ideas, and politics", hosted by Christopher Lydon, who has been a fixture on the Boston media scene for decades. He has an astonishing ability to make anything interesting, and talk about it smartly in depth.</p>
+
+<p><a href="https://www.npr.org/programs/wait-wait-dont-tell-me/" title="Wait Wait...Don't Tell Me!">Wait Wait...Don't Tell Me!</a>: NPR's comedy news quiz show. It's got the best roundup of news I hear in a week.</p>
+
+<p><a href="https://www.radiotopia.fm/podcasts/trump-con-law" title="What Trump Can Teach Us About Con Law">What Trump Can Teach Us About Con Law</a>: Whatever one's political leanings, I think we can agree that the President has given us all a chance to learn about points of the US Constitution we haven't thought much about before. This show, hosted by constitution law professor Elizabeth Joh and the aforementioned Roman Mars, explores those points for those of us who aren't lawyers.</p>
+
+<p>I'd like to have more on the list, when time permits.</p>
+
+<p>I also use <a href="https://huffduffer.com/" title="Huffduffer">Huffduffer</a>, a marvelous web tool for putting an audio program from a web site into a podcast feed for you. It's great for listening to random bits of audio from around the web.</p>
+
+</div>
+
+
+
+
+<footer>
+	<p>© 2017-2018, all rights reserved.</a>
+</footer>
+</body>
+</html>

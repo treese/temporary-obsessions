@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Time to delete Facebook</title>
+	
+	<meta name="description" content="">
+	<meta name="image" content="">
+	
+	<meta itemprop="name" content="Time to delete Facebook">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="">
+	
+	<meta name="og:title" content="Time to delete Facebook">
+	<meta name="og:description" content="">
+	
+	<meta name="og:url" content="https://temporaryobsessions.github.io/posts/2018/04/deleting-facebook/">
+	<meta name="og:site_name" content="Time to delete Facebook">
+	<meta name="og:type" content="article">
+	
+	<meta name="article:tag" content="">
+	<link rel="stylesheet" type="text/css" href="https://temporaryobsessions.github.io/css/style.css">
+	
+	
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body>
+
+<header>
+	
+	<a href="https://temporaryobsessions.github.io/" style="float: left;color:#777;"><strong>Temporary Obsessions</strong></a>
+	
+	
+	
+	
+	
+	<a href="https://temporaryobsessions.github.io/index.xml" style="color:#777;float: right;"><strong><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></strong></a>
+</header>
+
+
+<div id="loadingMask" style="width: 100%; height: 100%; position: fixed; background: #fff;"></div>
+<script>
+function fadeOut(el) {
+  el.style.opacity = 1;
+
+  var last = +new Date();
+  var tick = function() {
+    el.style.opacity = +el.style.opacity - (new Date() - last) / 80;
+    last = +new Date();
+    
+
+    if (el.style.opacity > 0) {
+      (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
+    } else {
+      el.style.display='none';
+    }
+  };
+
+  tick();
+}
+
+function ready(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+         el = document.getElementById('loadingMask');
+         fadeOut(el);
+        var elements = document.querySelectorAll("img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("alt")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("alt"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+
+    } else {
+        document.addEventListener('DOMContentLoaded', fn);
+    }
+}
+window.onload = ready;
+</script>
+
+<div class="content">
+  <h1>Time to delete Facebook <aside></aside></h1>
+  <p>Facebook has been in the news a lot lately, in the wake of how Cambridge Analytica used and abused data gathered about Facebook users. Earlier this week, Facebook CEO Mark Zuckerberg testified before Congress.</p>
+
+<p>The big picture is complicated, and unlikely to be resolved any time soon. There are questions about antitrust, free speech, the nature of advertising, how to regulate data privacy. In the U.S., it's not clear where regulatory jurisdiction lies, or how to construct beneficial regulations that don't create their own problems in how we can use the Internet well.</p>
+
+<p>So, as one of two billion people caught up in how Facebook treats our data, what can I do?</p>
+
+<p>The options are pretty stark. Facebook's privacy settings are confusing at best, and likely misleading, whether intentionally or not. I cannot be sure of what data Facebook is collecting, how it is doing that, or how that data will be used. I cannot be sure that Facebook would refrain from the using data already collected in some new way that they come up with in the future. I have no insight into what the value of my data to Facebook is, so that I could make a pseudo-economic decision about using Facebook.</p>
+
+<p>For me, Facebook simply has no credibility about respecting the use of the personal data it collects.</p>
+
+<p>Which means the choices are to accept the continuing surveillance without any real control over it, or to quit Facebook altogether.</p>
+
+<p>I don't really use Facebook that much, because the data issues have been visible for a long time. But I have continued to accept the notion that I might want to, for the communication it in theory provides with my "friends". And that includes some family members, and I have been loath to cut that off, even as, in actuality, I rarely take advantage of that.</p>
+
+<p>I also know that, whatever I do, I am simply one person out of two billion. Facebook won't notice. Since I'm not present on Facebook that much, probably few people will notice, much less care.</p>
+
+<p>Nevertheless, it's time to delete Facebook. Dealing with a huge company I can't trust is not for me.</p>
+
+<p>I can't say what the right decision for anyone else is. But I think it's worth thinking hard about whether the value Facebook has for you is more than the unknown cost of what Facebook takes from you.</p>
+
+<p>What is more disturbing is that even deleting your Facebook account doesn't remove you from its sights, as thousands of web sites are also enlisted in its data collection, whether they realize it or not. Figuring out what I can do about that is the next challenge.</p>
+
+</div>
+
+
+
+
+<footer>
+	<p>© 2017-2018, all rights reserved.</a>
+</footer>
+</body>
+</html>

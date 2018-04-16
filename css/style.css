@@ -6,8 +6,7 @@ body, li p {
 }
 
 h1,h2,h3,h4,h5,h6,header,header.a {
-	text-transform: lowercase;
-	font-family: 'Alegreya Sans SC', sans-serif;
+    font-family: 'Alegreya Sans SC', sans-serif;
 }
 
 header,header.a{
@@ -82,14 +81,14 @@ body {
 	font-feature-settings: 'liga' 1;
 }
 
-div.content { 
-	display: block; 
-	padding: 1rem 0 1rem 0;
+div.content {
+    display: block;
+    padding: 1rem 0 1rem 0;
 }
 
 header {
 	display:block;
-	padding: 0.5rem 0 0.5rem 0;
+        padding: 1.0rem 1.0rem 1.0rem 1.0rem;
 	border-bottom: 0.10em solid black;
 }
 
@@ -99,8 +98,8 @@ footer {
 }
 
 @media all and (max-width:520px) {
-	div.content { 
-		padding: 0;
+	div.content {
+	    padding: 0;
 	}
 }
 
@@ -140,16 +139,19 @@ ul,ol {
 }
 
 li {
-	line-height: 1.75em;
-	margin-left: 0.75em;
-	list-style-type: none;
+    line-height: 1.75em;
+    margin-left: 0.75em;
+    list-style-type: none;
 }
 
+div.footnotes li {
+    list-style-type: decimal;
+}
 
-table { 
-	margin-bottom: 1.5em;
-	border-collapse: collapse;
-	width: 95%;
+table {
+    margin-bottom: 1.5em;
+    border-collapse: collapse;
+    width: 95%;
 }
 
 table tr + tr {
@@ -193,12 +195,12 @@ a {
 }
 
 
-div.nav a:active div { 
-	background: #cacaca;
+div.nav a:active div {
+    background: #cacaca;
 }
 
-a:active { 
-	color: #777; 
+a:active {
+    color: #777;
 }
 
 a:hover {
@@ -247,4 +249,3 @@ blockquote {
 blockquote p {
 	display: inline;
 }
-

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>What if everyone gets over the bar?</title>
+	
+	<meta name="description" content="">
+	<meta name="image" content="">
+	
+	<meta itemprop="name" content="What if everyone gets over the bar?">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="">
+	
+	<meta name="og:title" content="What if everyone gets over the bar?">
+	<meta name="og:description" content="">
+	
+	<meta name="og:url" content="https://temporaryobsessions.github.io/posts/2018/04/everyone-over-the-bar/">
+	<meta name="og:site_name" content="What if everyone gets over the bar?">
+	<meta name="og:type" content="article">
+	
+	<meta name="article:tag" content="">
+	<link rel="stylesheet" type="text/css" href="https://temporaryobsessions.github.io/css/style.css">
+	
+	
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body>
+
+<header>
+	
+	<a href="https://temporaryobsessions.github.io/" style="float: left;color:#777;"><strong>Temporary Obsessions</strong></a>
+	
+	
+	
+	
+	
+	<a href="https://temporaryobsessions.github.io/index.xml" style="color:#777;float: right;"><strong><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></strong></a>
+</header>
+
+
+<div id="loadingMask" style="width: 100%; height: 100%; position: fixed; background: #fff;"></div>
+<script>
+function fadeOut(el) {
+  el.style.opacity = 1;
+
+  var last = +new Date();
+  var tick = function() {
+    el.style.opacity = +el.style.opacity - (new Date() - last) / 80;
+    last = +new Date();
+    
+
+    if (el.style.opacity > 0) {
+      (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
+    } else {
+      el.style.display='none';
+    }
+  };
+
+  tick();
+}
+
+function ready(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+         el = document.getElementById('loadingMask');
+         fadeOut(el);
+        var elements = document.querySelectorAll("img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("alt")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("alt"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+
+    } else {
+        document.addEventListener('DOMContentLoaded', fn);
+    }
+}
+window.onload = ready;
+</script>
+
+<div class="content">
+  <h1>What if everyone gets over the bar? <aside></aside></h1>
+  <p>Suppose a school had a basketball team, and the coach of the team worked to challenge every player to be the best they could be. Maybe even better. The players developed skills at all positions, and everyone played. There was no regular, default starting lineup, because the players could be selected at random to form a group of five who could play together, and win games, as a team. The players are excited to be there, they work hard together, and they cheer each other on. And they all get to play.</p>
+
+<p>And they win a lot of their games. Often a championship. Not alwayshttps://gohugo.io/content-management/formats/, but mostly.</p>
+
+<p>How would we think about that coach? As a genius? Maybe it seems impossible, or that couldn't possibly the right way to coach. But we probably wouldn't argue much with the results: a team that works hard, values every player, and wins. What's bad about that.</p>
+
+<p>Nothing, of course.</p>
+
+<p>Now, let's imagine a math teacher at a different school. One who sets a high standard of excellence and challenges every student. One who works exceedingly hard to build a team of math students, who cheer each other on, who help each other learn. At the end of the year, every one of those students scores at the top of whatever standard math assessment is current for the school. And every one of them gets an A.</p>
+
+<p>But wait, we might say. Grade inflation! The teacher is just handing out the top grades. You can't possibly have a math class where everyone gets an A. Where's the bell curve? Who is at the top?</p>
+
+<p>Are these cases really that different? The methods seem to be pretty much the same: set a high bar and work like hell to get everyone over it. They do it as a team. They get everyone there, together. And, both cases, we would be happy with the outcome.</p>
+
+<p>Except for this little nagging feeling that everyone getting an A isn't right.</p>
+
+<p>Maybe that's the problem we have: the feeling that students have to be ranked. That for some to succeed, some must fail.</p>
+
+<p>Which approach actually serves the students better?</p>
+
+</div>
+
+
+
+
+<footer>
+	<p>© 2017-2018, all rights reserved.</a>
+</footer>
+</body>
+</html>

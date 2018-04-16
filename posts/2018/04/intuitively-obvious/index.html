@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>On being intuitively obvious</title>
+	
+	<meta name="description" content="">
+	<meta name="image" content="">
+	
+	<meta itemprop="name" content="On being intuitively obvious">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="">
+	
+	<meta name="og:title" content="On being intuitively obvious">
+	<meta name="og:description" content="">
+	
+	<meta name="og:url" content="https://temporaryobsessions.github.io/posts/2018/04/intuitively-obvious/">
+	<meta name="og:site_name" content="On being intuitively obvious">
+	<meta name="og:type" content="article">
+	
+	<meta name="article:tag" content="">
+	<link rel="stylesheet" type="text/css" href="https://temporaryobsessions.github.io/css/style.css">
+	
+	
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body>
+
+<header>
+	
+	<a href="https://temporaryobsessions.github.io/" style="float: left;color:#777;"><strong>Temporary Obsessions</strong></a>
+	
+	
+	
+	
+	
+	<a href="https://temporaryobsessions.github.io/index.xml" style="color:#777;float: right;"><strong><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></strong></a>
+</header>
+
+
+<div id="loadingMask" style="width: 100%; height: 100%; position: fixed; background: #fff;"></div>
+<script>
+function fadeOut(el) {
+  el.style.opacity = 1;
+
+  var last = +new Date();
+  var tick = function() {
+    el.style.opacity = +el.style.opacity - (new Date() - last) / 80;
+    last = +new Date();
+    
+
+    if (el.style.opacity > 0) {
+      (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
+    } else {
+      el.style.display='none';
+    }
+  };
+
+  tick();
+}
+
+function ready(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+         el = document.getElementById('loadingMask');
+         fadeOut(el);
+        var elements = document.querySelectorAll("img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("alt")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("alt"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+
+    } else {
+        document.addEventListener('DOMContentLoaded', fn);
+    }
+}
+window.onload = ready;
+</script>
+
+<div class="content">
+  <h1>On being intuitively obvious <aside></aside></h1>
+  <p>A long time ago, when I was an undergraduate, it was common to hear someone say that  idea, usually a statement in mathematics, was “intuitively obvious”. I say “statement”, because not everything so labeled was necessarily true. But it was almost always said with irony or sarcasm, as if the phrase was by then overused, cliche, and amusing.</p>
+
+<p>Recently, however, I happened across a seemingly non-ironic use, in the book <em>Syntactic Structures</em> by Noam Chomsky.<sup class="footnote-ref" id="fnref:5"><a href="#fn:5">1</a></sup></p>
+
+<blockquote>
+<p>
+Consider for example the pair of sentences<br/>
+</p>
+<p>
+(103) (i)  John knew the boy studying in the library.<br/>
+</p>
+<p>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;(ii)  John found the boy studying in the library.<br/>
+</p>
+
+<p>
+It is intuitively obvious that these sentences have different grammatical structure (this becomes clear, for example, when we attempt to add “not running around in the streets” to (103)), but I do not believe that within the level of phrase structure grounds can be found for analyzing them into different constituents.<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">2</a></sup>
+</p>
+</blockquote>
+
+<p>Finding this in a published book started me wondering about the origin of the phrase. With Google Books, we can poke around a bit.</p>
+
+<p>The oldest use in a book that I could find is from <em>A Demonstration of Necessary Connexion</em> by John Fearn, in a philosophical/theological argument against David Hume.</p>
+
+<blockquote>
+<p>
+All, therefore, that we have to do, to prove, <em>by that abstract argument</em>, the being of A SELF-EXISTENT
+</p>
+<p>
+FIRST CAUSE <em>of all things</em>, is, to produce “an instance wherein one event must follow from another as an infallible consequence.”
+</p>
+
+<p>
+That the first proposal of such a proof should excite as much incredulity as surprise, is to be expected. But,fortunately,the truth of the propositions is so intuitively obvious, that the slightest attention must discern t; and, from the nature of the subject, it is to be hoped that attention will be
+</p>
+<p>
+afforded to them by every person who is in the least degree interested in general knowledge.<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">3</a></sup>
+</p>
+</blockquote>
+
+<p>Other early works that show up mostly seem to be concerned with philosophy or theology. The first reference I found specifically about mathematics comes via the first volume of Charles Richardson's <em>A New Dictionary of the English Dictionary</em>, published in 1836.<sup class="footnote-ref" id="fnref:3"><a href="#fn:3">4</a></sup> In his dictionary, Richardson cited Dugald Stewart's <em>Elements of the Philosophy of the Human Mind</em> <sup class="footnote-ref" id="fnref:4"><a href="#fn:4">5</a></sup> from 1822, which includes the statement “The truth of mathematical axioms has always been supposed to be intuitively obvious.” But Stewart's work is ultimately, in fact, about philosophy, not mathematics.</p>
+
+<p>I'm a bit suspicious about how far this gets us, because it took some focused queries to find the Chomsky quotation above; it didn't show up in the initial search results. <a href="https://books.google.com/ngrams/graph?content=intuitively+obvious&amp;year_start=1600&amp;year_end=1825&amp;corpus=15&amp;smoothing=3&amp;share=&amp;direct_url=t1%253B%252Cintuitively%2520obvious%253B%252Cc0#t1%253B%252Cintuitively%2520obvious%253B%252Cc1" title="Google Ngrams">Google Ngrams</a> shows the phrase first showing up in 1790, but I couldn't persuade it to show me the actual citation, and Wired has previously reported on <a href="https://www.wired.com/2015/10/pitfalls-of-studying-language-with-google-ngram/" title="The Pitfalls of Using Google Ngram to Study Language">The Pitfalls of Using Google Ngram to Study Language</a>.</p>
+
+<p>Chomsky's <em>Syntactic Structures</em> is, in large part, brought some mathematical methods of reasoning to linguistics, at a time when much linguistic thinking still relied on intuitions about language and how it works. But in the time between <em>Syntactic Structures</em> and the early 1980s, I suspect that the ironic usage of “intuitively obvious” emerged as intuition fell away as a basis for knowledge. Of course, intuition is often essential for new discoveries and insights in science and mathematics, but the intuition must be confirmed (or disproved) by other, more reliable, means. In any case, what is “obvious” to one person is often not “obvious” to another.</p>
+
+<p>As one might expect, the trail on historical usage on a term like this usually peters out into an ocean of antecedents, many of which we will never recover. Nevertheless, it seems interesting to find records of a time when “intuitively obvious” was used earnestly, without the sarcastic flavor it often carries today.</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:5">Although I do not rule out that the possibility that Chomsky slipped it in with a wink.] <a class="footnote-return" href="#fnref:5"><sup>[return]</sup></a></li>
+
+<li id="fn:1">From Noam Chomsky, <em>Syntactic Structures</em>, Mouton, 1957 (Eleventh printing, 1975, p. 81). <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+
+<li id="fn:2"><a href="https://books.google.com/books?hl=en&lr=&id=No1bAAAAMAAJ&oi=fnd&pg=PA1&dq=%2522intuitively+obvious%2522&ots=GmKevu5vUV&sig=ijR2XDMQex81o2td4NHg7kETxzo#v=onepage&q=%2522intuitively%2520obvious%2522&f=false">A Demonstration of Necessary Connexion - John Fearn</a> (London: Longman, Hurst, 1815, p. 5). <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
+
+<li id="fn:3"><a href="https://books.google.com/books?id=wH9FAAAAcAAJ&pg=RA1-PA1148&dq=%2522intuitively+obvious%2522&hl=en&sa=X&ved=0ahUKEwjf56G2lavaAhUk54MKHYyvDxM4FBDoAQgyMAI#v=onepage&q=%2522intuitively%2520obvious%2522&f=false">A New English Dictionary of the English Language: A to K - Charles Richardson</a> (London, William Pickering, 1836). Compared to Samual Johnson, Richardson included a larger and wider range of quotations from published literature along with definitions, and it has been said that Richardson's dictionary was a large part of the inspiration for the Oxford English Dictionary. On the other, Richardson was of the school that each word had exactly one meaning. <a class="footnote-return" href="#fnref:3"><sup>[return]</sup></a></li>
+
+<li id="fn:4"><a href="https://archive.org/details/elementsphiloso13stewgoog">Elements of the philosophy of the human mind</a> by Dugald Stewart (Albany:E. and E. Hosford, 1822). Interestingly, the scanned copy I found at the Internet Archive was scanned from Harvard's library, and was the copy “From the books in the homestead of Sarah Orne Jewett at South Berwick, Maine”, which brings things back to reading her novel <em>The Country of the Pointed Firs</em> as an undergrad, although I don't recall the phrase “intuitively obvious” ever being used in that literature class. <a class="footnote-return" href="#fnref:4"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+</div>
+
+
+
+
+<footer>
+	<p>© 2017-2018, all rights reserved.</a>
+</footer>
+</body>
+</html>
